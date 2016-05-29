@@ -1,0 +1,12 @@
+var express = require('express');
+var app = express();
+
+{{{ code }}}
+
+app.get('*', function (req, res) {
+  principal(req, res);
+});
+
+app.listen(3000, function () {
+  console.log('Rodando na porta 3000!');
+});
